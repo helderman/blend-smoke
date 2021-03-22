@@ -1,0 +1,10 @@
+.smoke {
+	background-image: url(noise1.jpg), url(noise2.jpg);
+	background-blend-mode: difference, normal;
+	animation: sliding 5s linear infinite;
+}
+
+@keyframes sliding {
+	from { background-position: 1024px 4096px, 0 3072px; }
+	to   { background-position: 0 0, 1024px 0; }
+}
